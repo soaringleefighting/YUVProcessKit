@@ -45,7 +45,8 @@ Usage: splitYUV.exe  srcyuv dstyuv1 dstyuv2 width height
 
 实现YUV文件的缩放，插值算法可选择cublic立方插值和bilinear双线性插值。
 
-Usage: <ScaleYUV.exe> <in file> <out file> <src width> <src height> <target width> <target height> <algorithm>
+Usage: \<ScaleYUV.exe\> \<in file\> \<out file\> \<src width\> \<src height\> \<target width\> \<target height\> \<algorithm\>
+
 Algorithm list: 0--cubic, 1--bilinear
 
 
