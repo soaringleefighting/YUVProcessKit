@@ -1,0 +1,1 @@
+http://read.pudn.com/downloads505/sourcecode/graph/texture_mapping/2100905/scale.c__.htm
