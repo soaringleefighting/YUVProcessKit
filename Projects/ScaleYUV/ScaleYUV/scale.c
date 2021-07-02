@@ -271,8 +271,10 @@ int main(int argc, char** argv)
     {  
         printf("Usage: <%s> <in file> <out file> <src width> <src height> <target width> <target height> <algorithm>\n", argv[0]);  
         printf("Algorithm list: 0--cubic, 1--bilinear\n");  
+#if WIN32		
 		system("pause");
-        return -1;  
+#endif
+       return -1;  
     }  
   
     fin = fopen(argv[1], "rb");  

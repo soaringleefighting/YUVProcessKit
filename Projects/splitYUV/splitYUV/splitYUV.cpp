@@ -20,7 +20,9 @@ int main(int argc, char** argv)
 	if (argc < 5)
 	{
 		printf("Usage: splitYUV.exe  srcyuv dstyuv1 dstyuv2 width height\n\n");
+#if WIN32		
 		system("pause");
+#endif
 		return -1;
 	}
 

@@ -17,7 +17,9 @@ int main(int argc, char **argv)
 	if (argc!=5)
 	{
 		printf("Usage: CompareYUV.exe yuv0 yuv1 width height\n");
+#if WIN32				
 		system("pause");
+#endif		
 		return -1;
 	}
 	fin_1 = fopen(argv[1],"rb");

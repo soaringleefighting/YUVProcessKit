@@ -2,6 +2,10 @@
 
 YUVProcessKit is a series of projects for Processing YUV sequences, such as horizontal combiner, compare, connect, extract, scale and split and so on.
 
+## 0、支持平台
+
+Windows, Linux, macOS(Apple Silicon)
+
 ## 1、参考
 
 【Codecs系列】YUV处理工具系列汇总： https://blog.csdn.net/SoaringLee_fighting/article/details/95807355
@@ -52,7 +56,9 @@ Algorithm list: 0--cubic, 1--bilinear
 
 ## 3、目录结构说明
 
-bin			: windows平台下的可执行文件
-
-Projects	: YUV处理工具的windows平台vs2013工程 
+├── bin			:	各平台的可执行文件
+├── build		：	Linux平台和macOS平台编译脚本
+├── LICENSE		：	License文件
+├── Projects	：	YUV处理工具的windows平台vs2013工程 
+└── README.md	：	本文件
 

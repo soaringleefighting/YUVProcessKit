@@ -11,7 +11,9 @@ int main(int argc, char** argv)
 	if (argc < 8)
 	{
 		printf("Usage: connectYUV.exe src2file src2file dstfile width height len1 len2\n\n");
+#if WIN32				
 		system("pause");
+#endif		
 		return -1;
 	}
 

@@ -13,7 +13,9 @@ int main(int argc, char** argv)
 	if (argc < 6)
 	{
 		printf("Usage: extractYUV.exe  input.yuv  width height startframe stopframe\n\n");
+#if WIN32				
 		system("pause");
+#endif
 		return -1;
 	}
 
@@ -22,7 +24,7 @@ int main(int argc, char** argv)
     height = atoi(argv[3]);
 	start = atoi(argv[4]);
 	stop = atoi(argv[5]);
-	sprintf_s(outname,"%s_%d_%d.yuv",argv[1],start,stop);
+	sprintf(outname,"%s_%d_%d.yuv",argv[1],start,stop);
 
 	fp_input = fopen(argv[1], "rb");
 	if (NULL == fp_input)

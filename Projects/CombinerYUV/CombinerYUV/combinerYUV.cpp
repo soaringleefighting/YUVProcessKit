@@ -21,7 +21,9 @@ int main(int argc, char** argv)
 	if (argc < 6)
 	{
 		printf("\nInput parameters insufficient!!!\nUsage: combinerYUV.exe input1 input2 output width height\n\n");
+#if WIN32		
 		system("pause");
+#endif		
 		return -1;
 	}
 
